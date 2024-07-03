@@ -1,0 +1,48 @@
+.container {
+    background-color: gray;
+    width: 500px;
+    height: auto;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 16px auto 0;
+    .addView {
+        margin: 10px;
+        .input{
+            margin-right: 10px;
+            height: 30px;
+
+        }
+        .addButton {
+            height: 30px;
+            padding: 6px 12px
+        }
+    }
+    .list {
+        background-color: rgb(184, 191, 191);
+        border-radius: 16px;
+        padding: 16px;
+      .item {
+        margin-top: 10px;   
+        background-color: rgb(172, 177, 175);
+        justify-content: center;
+        align-items: center;
+        .button {
+            margin: 0px 8px;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+        .text {
+            color: white;
+            text-align: left;
+        }
+        .editButton {
+            color: rgb(4, 24, 17);
+        }
+        .deleteButton {
+            color: red;
+
+        }
+      }
+    }
+
+}
