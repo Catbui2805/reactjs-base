@@ -1,27 +1,32 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
-import TodoList from "./views/Todo/TodoList";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import Navigation from "./views/Navigation/Navigation";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ErrorPage from "./views/ErrorPage/ErrorPage";
+import TodoList from "./views/Todo/TodoList";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <TodoList />
+        <BrowserRouter>
+          {/* ===Navigation=== */}
+          <Navigation />
+
+          {/* Route */}
+          <Routes>
+            <Route
+              path="/"
+              element={<div>Welcome! I'm a Nguyen Tran Cong</div>}
+            />
+            <Route path="/todo" element={<TodoList />} />
+            <Route path="/about" element={<div>I'm a Nguyen Tran Cong</div>} />
+            {/* <Route path="*" element={<ErrorPage />} /> */}
+          </Routes>
+        </BrowserRouter>
       </header>
       <ToastContainer
         position="top-center"
