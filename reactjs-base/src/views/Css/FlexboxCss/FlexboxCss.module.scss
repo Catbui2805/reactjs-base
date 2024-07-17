@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .note {
+    text-align: left;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 800px;
+    border: 5px solid aquamarine;
+    display: flex;
+    // flex-direction: rơw;
+    // flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .box {
+    height: 200px;
+    padding: 10px;
+    // flex-basis: auto;
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    flex: 1 1 auto;
+    // order: [box 1, 2 or 3]
+  }
+  
+  .box p {
+      font-size: 20px;
+      color: white;
+      text-align: left;
+  }
+  
+  .box1 {
+    background-color: red;
+  }
+  
+  .box2 {
+    background-color: green;
+  }
+  
+  .box3 {
+    background-color: blue;
+  }
+  

@@ -26,6 +26,22 @@ export default class Navigation extends Component {
           Todo list
         </NavLink>
         <NavLink
+          to={"/users"}
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? styles.active : ""
+          }
+        >
+          List User
+        </NavLink>
+        <NavLink
+          to={"/css"}
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? styles.active : ""
+          }
+        >
+          HTML CSS
+        </NavLink>
+        <NavLink
           to={"/about"}
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? styles.active : ""
