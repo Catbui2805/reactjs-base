@@ -1,0 +1,36 @@
+.header-container {
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        // 
+        .nav-link {
+            &.active {
+                color: #14074b;
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .btn-login {
+        border-radius: 5px;
+        margin-right: 15px;
+        padding: 0 16px;
+        border: 1px solid #c1bae0;
+        background: white;
+
+        &:hover {
+            background-color: #c1bae0;
+        }
+    }
+    .btn-logout {
+        border-radius: 5px;
+        margin-right: 15px;
+        padding: 0 16px;
+        border: 1px solid #c1bae0;
+        background: white;
+        &:hover{
+            background: #c1bae0;
+        }
+    }
+
+}
